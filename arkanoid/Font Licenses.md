@@ -16,14 +16,16 @@ This font is e-mailware; that is, if you like it, please e-mail the author at:
 iconian@aol.com
 
 ## "Arkanoid"  -  TrueType Font
-
 (c) 2000 by ck!  [Freaky Fonts]
 
 The personal, non-commercial use of my font is free.
 But Donations are accepted and highly appreciated!
+
 The use of my fonts for commercial and profit purposes is prohibited,
 unless a small donation is send to me.
+
 Contact: ck@freakyfonts.de
+
 These font files may not be modified or renamed.
 This readme file must be included with each font, unchanged.
 Redistribute? Sure, but send me an e-mail.
