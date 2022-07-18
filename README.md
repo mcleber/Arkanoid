@@ -1,6 +1,6 @@
 # Arkanoid Game
 
-Para desenvolver este jogo, como parte dos meus estudos em programação, utilizei a documentação da API SFML em conjunto com as aulas do curso.
+Para desenvolver este jogo, como parte dos meus estudos em programação, utilizei a documentação da API SFML juntamente com as aulas do curso.
 
 ![Telas](https://github.com/mcleber/Arkanoid-Game/blob/main/assets/Telas.jpg)
 
