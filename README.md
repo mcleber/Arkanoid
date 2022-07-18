@@ -1,23 +1,25 @@
 # Arkanoid Game
 
-Durante o desenvolvimento deste jogo, procurei basear-me ao máximo na documentação da API SFML, utilizando aulas apenas em pontos mais complexos.
+Para desenvolver este jogo, como parte dos meus estudos em programação, utilizei a documentação da API SFML em conjunto com as aulas do curso.
 
-## Instalação do SFML e configuração do Visual Studio Community
-A instalação e configuração da API está descrita em detalhes em Learn -> Tutorials.
+![Telas](https://github.com/mcleber/Arkanoid-Game/blob/main/assets/Telas.jpg)
+
+## Instalação do SFML e configuração no Visual Studio Community
+A instalação e configuração da API está descrita em detalhes em [Learn -> Tutorials](https://www.sfml-dev.org/learn.php).
 
 Há também informações sobre a configuração no Code::Blocks, Linux, Xcode e CMake.
 
-### Tutorial rápido de configuração
+## Tutorial rápido de configuração e uso deste repositório
 
-- Criar um diretório API_SFML, fazer o download do SFML para Visual Studio (utilizei Visual C++ 15 (2017) - 32-bit);
+- Criar o diretório API_SFML e fazer o [download](https://www.sfml-dev.org/download.php) do SFML para Visual Studio (utilizei Visual C++ 15 (2017) - 32-bit);
 - Descompactar o arquivo no diretório criado e renomeá-lo para SFML (irá facilitar mais adiante);
-- Abrir o Visual Studio, criar um novo projeto (chamei de ArkanoidGame) e salvar no diretório API_SFML criado anteriormente;
+- Abrir o Visual Studio, criar um novo projeto Empty (chamei de ArkanoidGame) e salvar no diretório API_SFML criado anteriormente;
 - Criar um arquivo main.cpp
-- Abrir as propriedades do projeto em Project, Properties;
+- Abrir as propriedades do projeto no menu Project e depois em Properties;
 - Em Configuration, selecionar All Configurations;
 - Em Platform, Active(Win32);
 - Clicar em C/C++, General, Additional Include Directories, Edit, clicar em New Line, inserir ``` $(SolutionDir)..\SFML\include ```, Ok e Apply;
-- Clicar em Linker, Additionoal Library Directories, Edit, clicar New Line, inserir ``` $(SolutionDir)..\SFML\lib ```, Ok e Apply;
+- Clicar em Linker, Additional Library Directories, Edit, clicar em New Line, inserir ``` $(SolutionDir)..\SFML\lib ```, Ok e Apply;
 - Em Configuration, selecionar Release;
 - Clicar em Linker, Input, Additional Dependencies e Edit;
 - Adicionar:
@@ -48,19 +50,40 @@ sfml-window-d.lib
 sfml-audio-d.lib
 ```
 - Clicar em Ok e Aplicar;
-- No diretório SFML, localizado em API_SFML, copiar todos os arquivos .dll do diretório bin ;
+- No diretório SFML, localizado em API_SFML, copiar todos os arquivos .dll do diretório bin;
 - Colar os arquivos dentro do diretório ArkanoidGame;
-- Copiar o código fonte do arquivo testeSFML.txt ou direto do site da API no main.cpp;
+- Copiar o código fonte do arquivo testeSFML.txt ou direto do site ([Learn -> Tutorials](https://www.sfml-dev.org/learn.php)) no main.cpp;
 - Compilar e executar (Ctrl + F5);
-- Se tudo estiver correto irá aparecer a imagem abaixo.
+- Se tudo estiver correto irá aparecer a imagem abaixo (retirada do site oficial).
 
+![Img retirada do site SFML](https://github.com/mcleber/Arkanoid-Game/blob/main/assets/resulltadoConfigSFML.png)
 
+- Copiar o diretório arkanoid deste repositório dentro de ArkanoidGame.
 
+Este diretório contém as imagens e fontes utilizadas no jogo.
 
+- Copiar o código fonte do jogo disponível em sourceFile deste repositório no main.cpp criado;
+- Compilar e executar (Ctrl + F5).
 
+Deverá abrir a tela inicial do jogo.
 
 ## Distribuição do Jogo
 Criar um diretório e copiar:
 - arquivos DLL;
 - pasta arkanoid;
-- arquivo executável.
+- arquivo executável (encontra-se no diretório release).
+
+Pode-se renomear o arquivo executável.
+
+## Links
+
+[SFML](https://www.sfml-dev.org/index.php)
+
+[C++](https://isocpp.org)
+
+[Visual Studio](https://visualstudio.microsoft.com/pt-br/)
+
+##
+![cppLogo](assets/cpp_logo-ed.png)
+![sfmlLogo](assets/sfml-icon-small-ed.png)
+![visualstudioLogo](assets/visualStudioLogo-ed.png)
