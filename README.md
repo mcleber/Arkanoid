@@ -13,7 +13,7 @@ Há também informações sobre a configuração no Code::Blocks, Linux, Xcode e
 
 - Criar o diretório API_SFML e fazer o [download](https://www.sfml-dev.org/download.php) do SFML para Visual Studio (utilizei Visual C++ 15 (2017) - 32-bit);
 - Descompactar o arquivo no diretório criado e renomeá-lo para SFML (irá facilitar mais adiante);
-- Abrir o Visual Studio, criar um novo projeto Empty (chamei de ArkanoidGame) e salvar no diretório API_SFML criado anteriormente;
+- Abrir o Visual Studio, criar um novo projeto (chamei de ArkanoidGame) e salvar no diretório API_SFML criado anteriormente;
 - Criar um arquivo main.cpp
 - Abrir as propriedades do projeto no menu Project e depois em Properties;
 - Em Configuration, selecionar All Configurations;
