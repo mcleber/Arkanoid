@@ -9,18 +9,18 @@ int main()
 
 	srand(time(0));
 
-	int score{ 0 }, balls{ 3 }; // pontuaÁ„o e quantidade de bolas
+	int score{ 0 }, balls{ 3 }; // pontua√ß√£o e quantidade de bolas
 
 	/* Definindo o tamanho da janela */
 	sf::RenderWindow app(sf::VideoMode(520, 500), "Arkanoid");
 	app.setFramerateLimit(60); // 60 fps
 
-	/* Õcone na janela */
+	/* √çcone na janela */
 	sf::Image icon;
 	icon.loadFromFile("arkanoid/arkanoid-logo.png");
 	app.setIcon(520, 517, icon.getPixelsPtr());
 
-	/* Textos - Fonte e formataÁ„o */
+	/* Textos - Fonte e formata√ß√£o */
 	sf::Font font1;
 	font1.loadFromFile("arkanoid/Arka_solid.ttf"); 
 
@@ -37,7 +37,7 @@ int main()
 	text2.setString(std::to_string(score));
 	text2.setCharacterSize(24);
 	text2.setPosition(340, 05);
-	text2.setFillColor(sf::Color::White); // Branco È o padr„o se n„o declarar
+	text2.setFillColor(sf::Color::White); // Branco √© o padr√£o se n√£o declarar
 
 	sf::Text text3("", font2); // balls
 	text3.setString("BALLS:");
@@ -54,7 +54,7 @@ int main()
 	sf::Text text5("", font1); // game over
 	text5.setString("GAME OVER");
 	text5.setCharacterSize(60);
-	text5.setPosition(-260, -250); // valor negativo para esconder fora da ·rea do jogo a frase GAME OVER
+	text5.setPosition(-260, -250); // valor negativo para esconder fora da √°rea do jogo a frase GAME OVER
 	text5.setFillColor(sf::Color::Red);
 
 	sf::Text text6("", font1); // venceu
@@ -96,8 +96,8 @@ int main()
 	
 	float dx{ 0 };
 	float dy{ 0 };
-	float x{ 320 }; // posiÁ„o de inicializaÁ„o da bola no eixo x
-	float y{ 390 }; // posiÁ„o de inicializaÁ„o da bola no eixo y
+	float x{ 320 }; // posi√ß√£o de inicializa√ß√£o da bola no eixo x
+	float y{ 390 }; // posi√ß√£o de inicializa√ß√£o da bola no eixo y
 	
 
 	/* Carrega textura do paddle e blocos e intro */
@@ -107,14 +107,14 @@ int main()
 	texture3.loadFromFile("arkanoid/arkanoid-logo.png");
 
 	sf::Sprite Paddle(texture1);
-	Paddle.setPosition(250, 480); // posiÁ„o do paddle
+	Paddle.setPosition(250, 480); // posi√ß√£o do paddle
 
 	/* Blocos */
 	sf::Sprite blocks[1000];
 
 	int num = 0;
-	for (int i = 1; i <= 10; i++ ) // Ajusta posiÁ„o dos blocos em x
-		for (int j = 3; j <= 12; j++) // Ajusta a posiÁ„o dos blocos em y
+	for (int i = 1; i <= 10; i++ ) // Ajusta posi√ß√£o dos blocos em x
+		for (int j = 3; j <= 12; j++) // Ajusta a posi√ß√£o dos blocos em y
 		{
 			blocks[num].setTexture(texture2);
 			blocks[num].setPosition(i * 43, j * 22);
@@ -167,11 +167,11 @@ int main()
 
 		for (int i = 0; i < num; i++)
 		{
-			if (sf::FloatRect(x + 3, y + 3, 6, 6).intersects(blocks[i].getGlobalBounds())) // x e y 3 È um ret‚ngulo dentro da bolda. O ret‚ngulo que colide com os blocos
+			if (sf::FloatRect(x + 3, y + 3, 6, 6).intersects(blocks[i].getGlobalBounds())) // x e y 3 √© um ret√¢ngulo dentro da bola. O ret√¢ngulo que colide com os blocos
 			{
-				score += 10; // Cada colis„o com o bloco adiciona 10
+				score += 10; // Cada colis√£o com o bloco adiciona 10
 				text2.setString(std::to_string(score)); // atualiza constantemente sempre que estiver no loop
-				blocks[i].setPosition(-100, 0); // posiciona o block fora da ·rea de jogo
+				blocks[i].setPosition(-100, 0); // posiciona o block fora da √°rea de jogo
 				dx = -dx;
 			}
 		}
@@ -181,7 +181,7 @@ int main()
 		{
 			if (sf::FloatRect(x + 3, y + 3, 6, 6).intersects(blocks[i].getGlobalBounds()))
 			{
-				score += 10; // Cada colis„o com o bloco adiciona 10
+				score += 10; // Cada colis√£o com o bloco adiciona 10
 				text2.setString(std::to_string(score)); // atualiza constantemente sempre que estiver no loop
 				blocks[i].setPosition(-100, 0);
 				dy = -dy;
@@ -195,17 +195,17 @@ int main()
 			dy = 3;
 		}
 
-		if (x < 1 || x > 500) // bordas para a bola n„o sair da tela
+		if (x < 1 || x > 500) // bordas para a bola n√£o sair da tela
 		{
 			dx = -dx;
 		}
 		
-		if (y < 45 || y > 485) // 45 para limitar colis„o da bola abaixo do Score(y=40)
+		if (y < 45 || y > 485) // 45 para limitar colis√£o da bola abaixo do Score(y=40)
 		{
 			dy = -dy;
 		}
 	
-		if (sf::FloatRect(x, y, 12, 12).intersects(Paddle.getGlobalBounds())) // colis„o com o paddle
+		if (sf::FloatRect(x, y, 12, 12).intersects(Paddle.getGlobalBounds())) // colis√£o com o paddle
 		{
 			dy = -(rand() % 5 + 2);
 		}
@@ -223,14 +223,14 @@ int main()
 
 		
 		/* Perdeu - Game Over */
-		if (balls < 1) balls = 0; // n„o deixa negativo
+		if (balls < 1) balls = 0; // n√£o deixa negativo
 		
 		if (balls < 1) // <= 0
 		{
-			dx = 0, dy = 0; // p·ra a bolinha
-			x = 320, y = 390; // posiÁ„o final 
+			dx = 0, dy = 0; // p√°ra a bolinha
+			x = 320, y = 390; // posi√ß√£o final 
 			
-			text5.setPosition(60, 200); // posiÁ„o do texto GAME OVER
+			text5.setPosition(60, 200); // posi√ß√£o do texto GAME OVER
 		}
 
 		/* Venceu - You Win */
@@ -263,7 +263,7 @@ int main()
 		app.draw(text6);
 		app.draw(text7);
 		app.draw(text9);
-		app.draw(ArkanoirLogo); // A posiÁ„o dos Draws interfere nos itens que aparecem na tela, ou seja, cria uma camada superior
+		app.draw(ArkanoirLogo); // A posi√ß√£o dos Draws interfere nos itens que aparecem na tela, ou seja, cria uma camada superior
 		app.draw(text8);
 		
 		app.display();
