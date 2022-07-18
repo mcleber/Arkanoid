@@ -77,9 +77,9 @@ Pode-se renomear o arquivo executável.
 
 ## Links
 
-[SFML](https://www.sfml-dev.org/index.php)
-
 [C++](https://isocpp.org)
+
+[SFML](https://www.sfml-dev.org/index.php)
 
 [Visual Studio](https://visualstudio.microsoft.com/pt-br/)
 
