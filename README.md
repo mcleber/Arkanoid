@@ -56,7 +56,7 @@ sfml-audio-d.lib
 - Compilar e executar (Ctrl + F5);
 - Se tudo estiver correto irá aparecer a imagem abaixo (retirada do site oficial).
 
-![Img retirada do site SFML](https://github.com/mcleber/Arkanoid-Game/blob/main/assets/resulltadoConfigSFML.png)
+![SFMLWorks](assets/SFMLWorks.png)
 
 - Copiar o diretório arkanoid deste repositório dentro de ArkanoidGame.
 
