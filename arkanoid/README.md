@@ -1,5 +1,5 @@
-#About Font Licenses
-##Alien League Version 2.0 Truetype Font for Windows
+# About Font Licenses
+## Alien League Version 2.0 Truetype Font for Windows
 2013 Iconian Fonts - Daniel Zadorozny
 
 http://www.iconian.com/
@@ -14,7 +14,7 @@ This font is e-mailware; that is, if you like it, please e-mail the author at:
 
 iconian@aol.com
 
-##"Arkanoid" - TrueType Font
+## "Arkanoid" - TrueType Font
 (c) 2000 by ck! [Freaky Fonts]
 
 The personal, non-commercial use of my font is free. But Donations are accepted and highly appreciated!
