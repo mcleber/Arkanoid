@@ -25,6 +25,4 @@ Contact: ck@freakyfonts.de
 
 These font files may not be modified or renamed. This readme file must be included with each font, unchanged. Redistribute? Sure, but send me an e-mail.
 
-If you like the font, please mail: ck@freakyfonts.de
-
 Visit .:Freaky Fonts:. for updates and new fonts (PC & MAC) : http://www.freakyfonts.de
