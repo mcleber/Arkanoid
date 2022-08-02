@@ -62,7 +62,7 @@ sfml-audio-d.lib
 
 Este diretório contém as imagens e fontes utilizadas no jogo.
 
-- Copiar o código fonte do jogo (disponível no sourceFile deste repositório) no main.cpp;
+- Copiar o código fonte do jogo (disponível no src deste repositório) no main.cpp;
 - Compilar e executar (Ctrl + F5).
 
 Deverá abrir a tela inicial do jogo.
