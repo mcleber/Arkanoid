@@ -82,8 +82,3 @@ Pode-se renomear o arquivo executável.
 [SFML](https://www.sfml-dev.org/index.php)
 
 [Visual Studio](https://visualstudio.microsoft.com/pt-br/)
-
-##
-![cppLogo](assets/cpp_logo-ed.png)
-![sfmlLogo](assets/sfml-icon-small-ed.png)
-![visualstudioLogo](assets/visualStudioLogo-ed.png)
