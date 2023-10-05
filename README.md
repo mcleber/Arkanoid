@@ -1,7 +1,5 @@
 # Arkanoid Game
 
-Resultado do curso de C++ e API SFML.
-
 ![Telas](https://github.com/mcleber/Arkanoid-Game/blob/main/assets/Telas.jpg)
 
 ## Instalação do SFML e configuração no Visual Studio Community
